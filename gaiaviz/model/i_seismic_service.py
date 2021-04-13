@@ -4,7 +4,7 @@ from abc import ABC, abstractmethod
 class ISeismicService(ABC):
 
     @abstractmethod
-    def load_line(line_type, line_number):
+    def load_line(self, line_type, line_number):
         """
         Load a seismic slice from from the survey
 
