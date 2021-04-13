@@ -12,4 +12,8 @@ def create_app():
 
         app.register_blueprint(data_app, url_prefix='/data')
 
+        @app.route('/')
+        def index():
+            return 'Welcome to Gaia Vision'
+
     return app
